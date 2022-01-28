@@ -15,6 +15,6 @@ jobs:
         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       with:
         source_file: '/'
-        destination_repo: 'exostaticprod'
+        destination_repo: 'knupson/exostaticprod'
         user_email: 'alejandro_benzoni@hotmail.com'
         user_name: 'knupson'
