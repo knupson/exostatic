@@ -1,4 +1,4 @@
-name: PushToRepo2
+name: PushToRepo
 
 on: workflow_dispatch
 jobs:
