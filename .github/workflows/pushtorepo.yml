@@ -1,9 +1,29 @@
-- name: Push directory to another repository
-  uses: cpina/github-action-push-to-another-repository@v1.4.1
-  env:
-    API_TOKEN_GITHUB: '${{ secrets.API_TOKEN_GITHUB }}'
-  with:
-    source-directory: /
-    destination-github-username: knupson
-    destination-repository-name: exostaticprod
-    user-email: alejandro_benzoni@hotmail.com
+name: PushToRepo
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: pandoc/latex
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install mustache (to update the date)
+        run:  apk add ruby && gem install mustache
+      - name: creates output
+        run:  sh ./build.sh
+      - name: Pushes to another repository
+        id: push_directory
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-directory: /
+          destination-github-username: 'knupson'
+          destination-repository-name: 'exostaticprod'
+          user-email: alejandrob@exo.com.ar
+          target-branch: main
