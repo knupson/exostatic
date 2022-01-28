@@ -1,0 +1,14 @@
+name: PushToRepo2
+
+on: workflow_dispatch
+jobs:
+  git-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: git-sync
+        uses: wei/git-sync@v3
+        with:
+          source_repo: "knupson/exostatic"
+          source_branch: "main"
+          destination_repo: "knupson/exostaticprod"
+          destination_branch: "main"
