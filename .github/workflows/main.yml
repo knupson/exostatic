@@ -8,7 +8,7 @@ jobs:
       - name: git-sync
         uses: wei/git-sync@v3
         with:
-          source_repo: "knupson/exostatic"
+          source_repo: "https://knupson:${{ secrets.API_TOKEN_GITHUB }}@github.com/knupson/exostatic.git"
           source_branch: "main"
           destination_repo: "knupson/exostaticprod"
           destination_branch: "main"
