@@ -10,5 +10,5 @@ jobs:
         with:
           source_repo: "https://knupson:${{ secrets.API_TOKEN_GITHUB }}@github.com/knupson/exostatic.git"
           source_branch: "main"
-          destination_repo: "https://knupson:${{ secrets.API_TOKEN_GITHUB_DEST }}@github.com/knupson/exostatic.git"
+          destination_repo: "https://knupson:${{ secrets.API_TOKEN_GITHUB }}@github.com/knupson/exostaticprod.git"
           destination_branch: "main"
