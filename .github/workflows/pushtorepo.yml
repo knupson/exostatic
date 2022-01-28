@@ -1,24 +1,20 @@
 name: PushToRepo
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+on: workflow_dispatch
 
 jobs:
-  build:
+  copy-file:
     runs-on: ubuntu-latest
-    container: pandoc/latex
     steps:
-      - name: Pushes to another repository
-        id: push_directory
-        uses: cpina/github-action-push-to-another-repository@main
-        env:
-          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
-        with:
-          source-directory: /
-          destination-github-username: 'knupson'
-          destination-repository-name: 'exostaticprod'
-          user-email: alejandrob@exo.com.ar
-          target-branch: main
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Pushes Files
+      uses: dmnemec/copy_file_to_another_repo_action@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      with:
+        source_file: '/'
+        destination_repo: 'exostaticprod'
+        user_email: 'alejandro_benzoni@hotmail.com'
+        user_name: 'knupson'
