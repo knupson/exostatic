@@ -8,7 +8,7 @@
 	>
 
 <channel>
-	<title>Mini PC &#8211; EXO | Soluciones Tecnologicas</title>
+	<title>Mini PC | EXO | Soluciones Tecnologicas</title>
 	<atom:link href="/categoria-producto/mini-pc/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>EXO &#124; Soluciones Tecnologicas</description>
@@ -18,11 +18,11 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.8.3</generator>
+	<generator>https://wordpress.org/?v=5.9</generator>
 
 <image>
 	<url>/wp-content/uploads/2019/03/cropped-Logos-EXO-SIN-TAG_2018-100x100.png</url>
-	<title>Mini PC &#8211; EXO | Soluciones Tecnologicas</title>
+	<title>Mini PC | EXO | Soluciones Tecnologicas</title>
 	<link>/</link>
 	<width>32</width>
 	<height>32</height>
