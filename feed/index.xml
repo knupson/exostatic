@@ -12,13 +12,13 @@
 	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>EXO &#124; Soluciones Tecnologicas</description>
-	<lastBuildDate>Fri, 14 Jan 2022 20:10:43 +0000</lastBuildDate>
+	<lastBuildDate>Fri, 28 Jan 2022 22:49:41 +0000</lastBuildDate>
 	<language>es</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.8.3</generator>
+	<generator>https://wordpress.org/?v=5.9</generator>
 
 <image>
 	<url>/wp-content/uploads/2019/03/cropped-Logos-EXO-SIN-TAG_2018-100x100.png</url>
