@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>1 x 12V/5A In 4 x USB 2.0 I 4 x USB 3.0 I 2 x RJ45 Giga LAN 6 x COM RS232 (COM1,COM2 cambiables a RS232/422/485) I 2x 3,5mm (1 x parlantes y 1x micrófono) 1 x GPIO I 1 x PS/2 | EXO | Soluciones Tecnologicas</title>
+	<atom:link href="/conectividad/1-x-12v-5a-in-4-x-usb-2-0-i-4-x-usb-3-0-i-2-x-rj45-giga-lan-6-x-com-rs232-com1com2-cambiables-a-rs232-422-485-i-2x-35mm-1-x-parlantes-y-1x-microfono-1-x-gpio-i-1-x-ps-2/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>EXO &#124; Soluciones Tecnologicas</description>
+	<lastBuildDate>Tue, 13 Jul 2021 20:41:12 +0000</lastBuildDate>
+	<language>es</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9</generator>
+
+<image>
+	<url>/wp-content/uploads/2019/03/cropped-Logos-EXO-SIN-TAG_2018-100x100.png</url>
+	<title>1 x 12V/5A In 4 x USB 2.0 I 4 x USB 3.0 I 2 x RJ45 Giga LAN 6 x COM RS232 (COM1,COM2 cambiables a RS232/422/485) I 2x 3,5mm (1 x parlantes y 1x micrófono) 1 x GPIO I 1 x PS/2 | EXO | Soluciones Tecnologicas</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Industrial X58</title>
+		<link>/producto/industrial-x58/</link>
+		
+		<dc:creator><![CDATA[Admin Wordpress]]></dc:creator>
+		<pubDate>Tue, 13 Jul 2021 20:15:05 +0000</pubDate>
+				<guid isPermaLink="false">/?post_type=product&#038;p=9985</guid>
+
+					<description><![CDATA[]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>
