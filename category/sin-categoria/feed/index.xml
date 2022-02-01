@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Sin categoría | EXO | Soluciones Tecnologicas</title>
+	<atom:link href="/category/sin-categoria/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>EXO &#124; Soluciones Tecnologicas</description>
+	<lastBuildDate>Tue, 31 Aug 2021 12:41:39 +0000</lastBuildDate>
+	<language>es</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9</generator>
+
+<image>
+	<url>/wp-content/uploads/2019/03/cropped-Logos-EXO-SIN-TAG_2018-100x100.png</url>
+	<title>Sin categoría | EXO | Soluciones Tecnologicas</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Presentación institucional</title>
+		<link>/presentacion-institucional/</link>
+		
+		<dc:creator><![CDATA[Admin Wordpress]]></dc:creator>
+		<pubDate>Fri, 20 Sep 2019 16:02:30 +0000</pubDate>
+				<category><![CDATA[Sin categoría]]></category>
+		<guid isPermaLink="false">/?p=608</guid>
+
+					<description><![CDATA[]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>EXO: Novedades super tecno para pasar las vacaciones de invierno</title>
+		<link>/exo-novedades-super-tecno-para-pasar-las-vacaciones-de-invierno/</link>
+		
+		<dc:creator><![CDATA[Admin Wordpress]]></dc:creator>
+		<pubDate>Wed, 10 Jun 2015 12:49:23 +0000</pubDate>
+				<category><![CDATA[Sin categoría]]></category>
+		<guid isPermaLink="false">/?p=10204</guid>
+
+					<description><![CDATA[.- Con las vacaciones de invierno llegando a todo el país en los próximos días y con las limitaciones de entretenimiento con los más chicos por las restricciones impuestas por la pandemia, EXO presentó su campaña “vacaciones super tecno”. Allí la compañía de tecnología lanzó en su tienda online diversas promociones que ofrecen entretenimiento para los chicos durante [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>EXO presentó su nueva 2en1 EXO Wings para la vuelta a clases &#8211; SobreTiza</title>
+		<link>/exo-presento-su-nueva-2en1-exo-wings-para-la-vuelta-a-clases-sobretiza/</link>
+		
+		<dc:creator><![CDATA[Admin Wordpress]]></dc:creator>
+		<pubDate>Thu, 12 Mar 2015 12:02:58 +0000</pubDate>
+				<category><![CDATA[Sin categoría]]></category>
+		<guid isPermaLink="false">/?p=10231</guid>
+
+					<description><![CDATA[El fabricante nacional de equipamiento informático, EXO, lanzó un nuevo modelo de su 2en1 EXO Wings. Este dispositivo cuenta con un sistema operativo Windows 8.1 con Bing, memoria ram de 2GB, un disco de estado sólido de 32GB de almacenamiento y pantalla táctil capacitiva de 10 pulgadas multi-touch de alta definición. El equipo permite que [&#8230;]]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>Nueva 2en1 EXO Wings &#8211; X-Tecno</title>
+		<link>/nueva-2en1-exo-wings-x-tecno/</link>
+		
+		<dc:creator><![CDATA[Admin Wordpress]]></dc:creator>
+		<pubDate>Tue, 10 Feb 2015 11:59:42 +0000</pubDate>
+				<category><![CDATA[Sin categoría]]></category>
+		<guid isPermaLink="false">/?p=10221</guid>
+
+					<description><![CDATA[EXO, empresa nacional de tecnología, presenta a su nuevo modelo 2en1 EXO Wings con procesador Intel® QuadCore Z3735F.]]></description>
+		
+		
+		
+			</item>
+		<item>
+		<title>EXO acompaña a los chicos en este regreso a clases con la nueva 2en1 EXO Wings &#8211; HyperData TIC</title>
+		<link>/exo-acompana-a-los-chicos-en-este-regreso-a-clases-con-la-nueva-2en1-exo-wings-hyperdata-tic/</link>
+		
+		<dc:creator><![CDATA[Admin Wordpress]]></dc:creator>
+		<pubDate>Mon, 09 Feb 2015 11:59:01 +0000</pubDate>
+				<category><![CDATA[Sin categoría]]></category>
+		<guid isPermaLink="false">/?p=10219</guid>
+
+					<description><![CDATA[El nuevo modelo brinda a los chicos lo último en tecnología para que puedan estudiar, tomar apuntes, y realizar las tareas de la manera más rápida y divertida. La empresa ofrece un nuevo dispositivo con lo último en tecnología diseñada para que los chicos puedan realizar las tareas de todos los días de forma rápida [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>
