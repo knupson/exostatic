@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Soluciones | EXO | Soluciones Tecnologicas</title>
+	<atom:link href="/category/soluciones/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>EXO &#124; Soluciones Tecnologicas</description>
+	<lastBuildDate>Thu, 14 Nov 2019 15:18:38 +0000</lastBuildDate>
+	<language>es</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9</generator>
+
+<image>
+	<url>/wp-content/uploads/2019/03/cropped-Logos-EXO-SIN-TAG_2018-100x100.png</url>
+	<title>Soluciones | EXO | Soluciones Tecnologicas</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Primera implementación IOT de EXO en Brasil</title>
+		<link>/primera-implementacion-iot-de-exo-en-brasil/</link>
+		
+		<dc:creator><![CDATA[Admin Wordpress]]></dc:creator>
+		<pubDate>Wed, 04 Sep 2019 19:02:05 +0000</pubDate>
+				<category><![CDATA[Soluciones]]></category>
+		<guid isPermaLink="false">/?p=539</guid>
+
+					<description><![CDATA[EXO realizó una implementación en julio de 2019 en la ciudad de Río de Janeiro, Brasil, para una importante red de Shoppings de BRMALL, una prueba del concepto de su solución de estacionamiento inteligente para modelos privados, con comunicación a través de la red Lora Brasil a través de American Tower / Everynet. Esta prueba [&#8230;]]]></description>
+		
+		
+		
+			</item>
+	</channel>
+</rss>
