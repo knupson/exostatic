@@ -20,4 +20,3 @@ jobs:
         user_email: 'alejandro_benzoni@hotmail.com'
         user_name: 'knupson'
         commit_message: 'Push a PROD'
-        use_rsync: rsync -avh
