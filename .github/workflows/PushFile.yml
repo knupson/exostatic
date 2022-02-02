@@ -17,7 +17,7 @@ jobs:
       with:
         source_file: '.'
         destination_repo: 'knupson/exostaticprod'
-        destination_folder: 'test'
+        destination_folder: 'test2'
         user_email: 'alejandro_benzoni@hotmail.com'
         user_name: 'knupson'
         commit_message: 'Push a PROD'
