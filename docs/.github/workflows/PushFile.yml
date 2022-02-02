@@ -1,0 +1,23 @@
+name: Push File
+
+on: workflow_dispatch
+
+jobs:
+  copy-file:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Pushes test file
+      #uses: dmnemec/copy_file_to_another_repo_action@main
+      uses: sergiopp/copy_file_to_another_repo_action@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      with:
+        source_file: '.'
+        destination_repo: 'knupson/exostaticprod'
+        destination_folder: 'docs'
+        user_email: 'alejandro_benzoni@hotmail.com'
+        user_name: 'knupson'
+        commit_message: 'Push a PROD'
