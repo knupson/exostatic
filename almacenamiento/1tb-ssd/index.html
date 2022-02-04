@@ -40,7 +40,7 @@
 <link rel="stylesheet" id="woocommerce-general-css" href="/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=6.1.1" type="text/css" media="all">
 <style id="woocommerce-inline-inline-css" type="text/css">.woocommerce form .form-row .required { visibility: visible; }</style>
 <link rel="stylesheet" id="wp-show-posts-css" href="/wp-content/plugins/wp-show-posts/css/wp-show-posts-min.css?ver=1.1.3" type="text/css" media="all">
-<link rel="stylesheet" id="ssp-search-css" href="/wp-content/plugins/simply-static-pro/assets/ssp-search.css?ver=1.1.1" type="text/css" media="all">
+<link rel="stylesheet" id="ssp-search-algolia-css" href="/wp-content/plugins/simply-static-pro/assets/ssp-search-algolia.css?ver=1.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="weglot-css-css" href="/wp-content/plugins/weglot/dist/css/front-css.css?ver=3.5" type="text/css" media="">
 <style id="weglot-css-inline-css" type="text/css">.weglot-flags.es > a:before, .weglot-flags.es > span:before { background-position: -3750px 0 !important; } .weglot-flags.flag-1.es > a:before, .weglot-flags.flag-1.es > span:before { background-position: -353px 0 !important; } .weglot-flags.flag-2.es > a:before, .weglot-flags.flag-2.es > span:before { background-position: -2880px 0 !important; } .weglot-flags.flag-3.es > a:before, .weglot-flags.flag-3.es > span:before { background-position: -4656px 0 !important; } 
 .contry-selector {
@@ -268,7 +268,7 @@ jqueryParams.length&&$.each(jqueryParams,function(e,r){if("function"==typeof r){
 </div>
          </div>
 
-	<header class="gm-navbar gm-preset-id-3057 gm-navbar--align-left gm-navbar--style-1 gm-top-links-align-right gm-navbar--toolbar-false gm-navbar--has-shadow gm-navbar--shadow-tiny gm-navbar--has-shadow-sticky gm-navbar--has-shadow-dropdown gm-navbar--shadow-dropdown-medium gm-navbar--hide-gm-caret gm-dropdown-hover-style-default gm-dropdown-appearance-default gm-dropdown-with-scrollbar" id="gm-61fc4eb39e952" data-version="2.6.1.1">
+	<header class="gm-navbar gm-preset-id-3057 gm-navbar--align-left gm-navbar--style-1 gm-top-links-align-right gm-navbar--toolbar-false gm-navbar--has-shadow gm-navbar--shadow-tiny gm-navbar--has-shadow-sticky gm-navbar--has-shadow-dropdown gm-navbar--shadow-dropdown-medium gm-navbar--hide-gm-caret gm-dropdown-hover-style-default gm-dropdown-appearance-default gm-dropdown-with-scrollbar" id="gm-61fc7dac6d3b3" data-version="2.6.1.1">
 		<div class="gm-wrapper">
 <div class="gm-inner">
 				<div class="gm-inner-bg"></div>
@@ -571,24 +571,7 @@ jqueryParams.length&&$.each(jqueryParams,function(e,r){if("function"==typeof r){
 </div>	<div id="sidebar">
 		<div id="block-14" class="et_pb_widget widget_block">
 <h2>Busqueda</h2>
-<p>			</p>
-<div class="ssp-search">
-				<form class="search-form">
-					<div class="form-row">
-					<div class="search-input-container">
-						<input class="search-input" name="search-input" placeholder="Search" autocomplete="off">
-						<div class="search-auto-complete"></div>
-					</div>
-					<button type="submit" class="search-submit">
-						<svg viewbox="0 0 24 24">
-						<path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"></path>
-						</svg>
-					</button>
-					</div>
-				</form>
-				<div class="result"></div>
-			</div>
-			
+<p></p>
 <p></p>
 <div class="facetwp-facet facetwp-facet-producto facetwp-type-radio" data-name="producto" data-type="radio"></div>
 <h2>Sistema Operativo</h2>
@@ -761,7 +744,7 @@ var wpcf7 = {"api":{"root":"\/wp-json\/","namespace":"contact-form-7\/v1"}};
 <script type="text/javascript" id="groovy-menu-js-js-extra">
 /* <![CDATA[ */
 var groovyMenuHelper = {"ajaxurl":"\/wp-admin\/admin-ajax.php"};
-var groovyMenuNonce = {"style":"36b3b3bbe7"};
+var groovyMenuNonce = {"style":"c2cb46de0f"};
 /* ]]> */
 </script>
 <script type="text/javascript" src="/wp-content/plugins/groovy-menu/assets/js/frontend.js?ver=2.6.1.1" id="groovy-menu-js-js"></script>
@@ -795,14 +778,15 @@ var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax
 /* ]]> */
 </script>
 <script type="text/javascript" src="/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=6.1.1" id="wc-cart-fragments-js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js?ver=1.1.1" id="ssp-fuse-js"></script>
-<script type="text/javascript" src="/wp-content/plugins/simply-static-pro/assets/ssp-search.js?ver=1.1.1" id="ssp-search-js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js" id="ssp-algolia-js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js" id="ssp-algolia-autocomplete-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/simply-static-pro/assets/ssp-search-algolia.js?ver=1.1.1" id="ssp-algolia-script-js"></script>
 <script type="text/javascript" id="divi-custom-script-js-extra">
 /* <![CDATA[ */
 var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
 var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
 var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
-var et_pb_custom = {"ajaxurl":"\/wp-admin\/admin-ajax.php","images_uri":"\/wp-content\/themes\/Divi\/images","builder_images_uri":"\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"04d77aaa1d","subscription_failed":"Por favor, revise los campos a continuación para asegurarse de que la información introducida es correcta.","et_ab_log_nonce":"5faaf2ece9","fill_message":"Por favor, rellene los siguientes campos:","contact_error_message":"Por favor, arregle los siguientes errores:","invalid":"De correo electrónico no válida","captcha":"Captcha","prev":"Anterior","previous":"Anterior","next":"Siguiente","wrong_captcha":"Ha introducido un número equivocado de captcha.","wrong_checkbox":"Checkbox","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"10651","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"no","is_shortcode_tracking":"","tinymce_uri":""};
+var et_pb_custom = {"ajaxurl":"\/wp-admin\/admin-ajax.php","images_uri":"\/wp-content\/themes\/Divi\/images","builder_images_uri":"\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"a10ed45895","subscription_failed":"Por favor, revise los campos a continuación para asegurarse de que la información introducida es correcta.","et_ab_log_nonce":"028222c3fe","fill_message":"Por favor, rellene los siguientes campos:","contact_error_message":"Por favor, arregle los siguientes errores:","invalid":"De correo electrónico no válida","captcha":"Captcha","prev":"Anterior","previous":"Anterior","next":"Siguiente","wrong_captcha":"Ha introducido un número equivocado de captcha.","wrong_checkbox":"Checkbox","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"10651","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"no","is_shortcode_tracking":"","tinymce_uri":""};
 var et_pb_box_shadow_elements = [];
 /* ]]> */
 </script>
@@ -820,7 +804,7 @@ var et_modules_wrapper = {"builderCssContainerPrefix":"#et-boc","builderCssLayou
 <script type="text/javascript" src="/wp-content/themes/Divi/core/admin/js/common.js?ver=4.14.7" id="et-core-common-js"></script>
 <script type="text/javascript" id="klick_cs_ui_script-js-extra">
 /* <![CDATA[ */
-var klick_cs = {"ajaxurl":"\/wp-admin\/admin-ajax.php","klick_cs_ajax_nonce":"2d3dc99315","klick_cs_plugin_url":"\/wp-content\/plugins\/wp-configuration-and-status\/"};
+var klick_cs = {"ajaxurl":"\/wp-admin\/admin-ajax.php","klick_cs_ajax_nonce":"573114353b","klick_cs_plugin_url":"\/wp-content\/plugins\/wp-configuration-and-status\/"};
 /* ]]> */
 </script>
 <script type="text/javascript" src="/wp-content/plugins/wp-configuration-and-status/js/klick-cs-ui.min.js?ver=0.0.1" id="klick_cs_ui_script-js"></script>
@@ -830,7 +814,7 @@ var klick_cs = {"ajaxurl":"\/wp-admin\/admin-ajax.php","klick_cs_ajax_nonce":"2d
 <script src="/wp-content/plugins/facetwp/assets/js/src/deprecated.js?ver=3.8-demo"></script>
 <script src="/wp-content/plugins/facetwp/includes/integrations/woocommerce/woocommerce.js?ver=3.8-demo"></script>
 <script>
-window.FWP_JSON = {"prefix":"_","no_results_text":"No se han encontrado resultados","ajaxurl":"\/wp-json\/facetwp\/v1\/refresh","nonce":"aed92cda1d","preload_data":{"facets":{"producto":"<div class=\"facetwp-radio checked\" data-value=\"\">Any<\/div><div class=\"facetwp-radio\" data-value=\"all-in-one\">All In One <span class=\"facetwp-counter\">(2)<\/span><\/div>","sistema_operativo":"<div class=\"facetwp-radio checked\" data-value=\"\">Any<\/div><div class=\"facetwp-radio\" data-value=\"linux-mint\">Linux Mint <span class=\"facetwp-counter\">(1)<\/span><\/div><div class=\"facetwp-radio\" data-value=\"windows-10-pro\">Windows 10 Pro <span class=\"facetwp-counter\">(1)<\/span><\/div>"},"template":"","settings":{"debug":{"query_args":{"pa_almacenamiento":"1tb-ssd","error":"","m":"","p":0,"post_parent":"","subpost":"","subpost_id":"","attachment":"","attachment_id":0,"name":"","pagename":"","page_id":0,"second":"","minute":"","hour":"","day":0,"monthnum":0,"year":0,"w":0,"category_name":"","tag":"","cat":"","tag_id":"","author":"","author_name":"","feed":"","tb":"","paged":1,"meta_key":"","meta_value":"","preview":"","s":null,"sentence":"","title":"","fields":"","menu_order":"","embed":"","category__in":[],"category__not_in":[],"category__and":[],"post__in":[],"post__not_in":[],"post_name__in":[],"tag__in":[],"tag__not_in":[],"tag__and":[],"tag_slug__in":[],"tag_slug__and":[],"post_parent__in":[],"post_parent__not_in":[],"author__in":[],"author__not_in":[],"orderby":"menu_order title","order":"ASC","meta_query":[],"tax_query":{"relation":"AND","0":{"taxonomy":"product_visibility","field":"term_taxonomy_id","terms":[54],"operator":"NOT IN"}},"wc_query":"product_query","posts_per_page":9,"facetwp":true},"sql":"SELECT SQL_CALC_FOUND_ROWS  wp_posts.ID FROM wp_posts  LEFT JOIN wp_term_relationships ON (wp_posts.ID = wp_term_relationships.object_id) WHERE 1=1  AND ( \n  wp_posts.ID NOT IN (\n\t\t\t\tSELECT object_id\n\t\t\t\tFROM wp_term_relationships\n\t\t\t\tWHERE term_taxonomy_id IN (54)\n\t\t\t) \n  AND \n  wp_term_relationships.term_taxonomy_id IN (304)\n) AND ((wp_posts.post_type = 'product' AND (wp_posts.post_status = 'publish'))) GROUP BY wp_posts.ID ORDER BY wp_posts.menu_order ASC, wp_posts.post_title ASC LIMIT 0, 9","facets":{"producto":{"name":"producto","label":"Producto","type":"radio","source":"tax\/product_cat","parent_term":"","modifier_type":"off","modifier_values":"","ghosts":"no","preserve_ghosts":"no","orderby":"count","count":"10","source_other":"","label_any":"Any","operator":"or","selected_values":[]},"sistema_operativo":{"name":"sistema_operativo","label":"Sistema Operativo","type":"radio","source":"tax\/pa_os","parent_term":"","modifier_type":"off","modifier_values":"","ghosts":"no","preserve_ghosts":"no","orderby":"count","count":"10","source_other":"","label_any":"Any","operator":"or","selected_values":[]}},"template":{"name":"wp"},"settings":{"thousands_separator":",","decimal_separator":".","prefix":"_","load_jquery":"yes","wc_enable_variations":"yes","wc_index_all":"yes","debug_mode":"on"},"last_indexed":"3 días ago","row_counts":{"almacenamiento":57,"memoria":57,"procesador":57,"producto":57,"sistema_operativo":57},"hooks_used":{"pre_get_posts":["wp-content\/plugins\/woocommerce\/includes\/class-wc-query.php:295","wp-content\/themes\/Divi\/epanel\/custom_functions.php:1579","wp-content\/themes\/Divi\/includes\/builder\/core.php:7137","wp-content\/themes\/Divi\/includes\/builder\/functions.php:351","wp-content\/themes\/Divi\/includes\/builder\/functions.php:10022","wp-content\/themes\/Divi\/includes\/builder\/compat\/woocommerce.php:50","wp-content\/plugins\/groovy-menu\/includes\/modules\/core\/inc\/GroovyMenuSettings.php:3542","wp-content\/themes\/Divi\/includes\/builder\/feature\/gutenberg\/blocks\/Layout.php:417"]}},"pager":{"page":1,"per_page":9,"total_rows":2,"total_pages":1},"num_choices":{"producto":1,"sistema_operativo":2},"labels":{"producto":"Producto","sistema_operativo":"Sistema Operativo"}}}};
+window.FWP_JSON = {"prefix":"_","no_results_text":"No se han encontrado resultados","ajaxurl":"\/wp-json\/facetwp\/v1\/refresh","nonce":"8f7bdc7b55","preload_data":{"facets":{"producto":"<div class=\"facetwp-radio checked\" data-value=\"\">Any<\/div><div class=\"facetwp-radio\" data-value=\"all-in-one\">All In One <span class=\"facetwp-counter\">(2)<\/span><\/div>","sistema_operativo":"<div class=\"facetwp-radio checked\" data-value=\"\">Any<\/div><div class=\"facetwp-radio\" data-value=\"linux-mint\">Linux Mint <span class=\"facetwp-counter\">(1)<\/span><\/div><div class=\"facetwp-radio\" data-value=\"windows-10-pro\">Windows 10 Pro <span class=\"facetwp-counter\">(1)<\/span><\/div>"},"template":"","settings":{"debug":{"query_args":{"pa_almacenamiento":"1tb-ssd","error":"","m":"","p":0,"post_parent":"","subpost":"","subpost_id":"","attachment":"","attachment_id":0,"name":"","pagename":"","page_id":0,"second":"","minute":"","hour":"","day":0,"monthnum":0,"year":0,"w":0,"category_name":"","tag":"","cat":"","tag_id":"","author":"","author_name":"","feed":"","tb":"","paged":1,"meta_key":"","meta_value":"","preview":"","s":null,"sentence":"","title":"","fields":"","menu_order":"","embed":"","category__in":[],"category__not_in":[],"category__and":[],"post__in":[],"post__not_in":[],"post_name__in":[],"tag__in":[],"tag__not_in":[],"tag__and":[],"tag_slug__in":[],"tag_slug__and":[],"post_parent__in":[],"post_parent__not_in":[],"author__in":[],"author__not_in":[],"orderby":"menu_order title","order":"ASC","meta_query":[],"tax_query":{"relation":"AND","0":{"taxonomy":"product_visibility","field":"term_taxonomy_id","terms":[54],"operator":"NOT IN"}},"wc_query":"product_query","posts_per_page":9,"facetwp":true},"sql":"SELECT SQL_CALC_FOUND_ROWS  wp_posts.ID FROM wp_posts  LEFT JOIN wp_term_relationships ON (wp_posts.ID = wp_term_relationships.object_id) WHERE 1=1  AND ( \n  wp_posts.ID NOT IN (\n\t\t\t\tSELECT object_id\n\t\t\t\tFROM wp_term_relationships\n\t\t\t\tWHERE term_taxonomy_id IN (54)\n\t\t\t) \n  AND \n  wp_term_relationships.term_taxonomy_id IN (304)\n) AND ((wp_posts.post_type = 'product' AND (wp_posts.post_status = 'publish'))) GROUP BY wp_posts.ID ORDER BY wp_posts.menu_order ASC, wp_posts.post_title ASC LIMIT 0, 9","facets":{"producto":{"name":"producto","label":"Producto","type":"radio","source":"tax\/product_cat","parent_term":"","modifier_type":"off","modifier_values":"","ghosts":"no","preserve_ghosts":"no","orderby":"count","count":"10","source_other":"","label_any":"Any","operator":"or","selected_values":[]},"sistema_operativo":{"name":"sistema_operativo","label":"Sistema Operativo","type":"radio","source":"tax\/pa_os","parent_term":"","modifier_type":"off","modifier_values":"","ghosts":"no","preserve_ghosts":"no","orderby":"count","count":"10","source_other":"","label_any":"Any","operator":"or","selected_values":[]}},"template":{"name":"wp"},"settings":{"thousands_separator":",","decimal_separator":".","prefix":"_","load_jquery":"yes","wc_enable_variations":"yes","wc_index_all":"yes","debug_mode":"on"},"last_indexed":"3 días ago","row_counts":{"almacenamiento":57,"memoria":57,"procesador":57,"producto":57,"sistema_operativo":57},"hooks_used":{"pre_get_posts":["wp-content\/plugins\/woocommerce\/includes\/class-wc-query.php:295","wp-content\/themes\/Divi\/epanel\/custom_functions.php:1579","wp-content\/themes\/Divi\/includes\/builder\/core.php:7137","wp-content\/themes\/Divi\/includes\/builder\/functions.php:351","wp-content\/themes\/Divi\/includes\/builder\/functions.php:10022","wp-content\/themes\/Divi\/includes\/builder\/compat\/woocommerce.php:50","wp-content\/plugins\/groovy-menu\/includes\/modules\/core\/inc\/GroovyMenuSettings.php:3542","wp-content\/themes\/Divi\/includes\/builder\/feature\/gutenberg\/blocks\/Layout.php:417"]}},"pager":{"page":1,"per_page":9,"total_rows":2,"total_pages":1},"num_choices":{"producto":1,"sistema_operativo":2},"labels":{"producto":"Producto","sistema_operativo":"Sistema Operativo"}}}};
 window.FWP_HTTP = {"get":[],"uri":"almacenamiento\/1tb-ssd","url_vars":[]};
 </script>
 	
